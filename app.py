@@ -8,8 +8,7 @@ from flasgger import Swagger
 app=Flask(__name__)
 Swagger(app)
 
-mle = pickle.load(open('mle_deployment_senti_model.pkl','rb'))
-tfidf_vect = pickle.load(open('tfidf_imdb.pkl','rb'))
+mle = pickle.load(open('lstm.pkl','rb'))
 
 @app.route('/')
 def home():
